@@ -8,6 +8,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import Home from './Components/Home';
 import BubbleSort from './Components/BubbleSort';
+import SelectionSort from './Components/SelectionSort';
+import LinearSearch from './Components/LinearSearch';
+import BinarySearch from './Components/BinarySearch';
+
+
 
 
 const store = createStore(reducers,composeWithDevTools());
@@ -20,6 +25,11 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/bubble-sort" component={BubbleSort}></Route>
+            <Route exact path="/selection-sort" component={SelectionSort}></Route>
+            <Route exact path="/linear-search" component={LinearSearch}></Route>
+            <Route exact path="/binary-search" component={BinarySearch}></Route>
+
+
           </Switch>
         </Router>
       </Provider>
